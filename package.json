@@ -7,11 +7,14 @@
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
-    "gulp": "3.9.*",
+    "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6",
     "gulp-rename": "^1.2",
-    "gulp-uglify": "^1.5"
+    "gulp-uglify": "^1.5",
+    "lodash": ">=4.17.19",
+    "lodash.template": ">=4.5.0",
+    "minimatch": ">=3.0.2"
   },
   "scripts": {
     "build": "node ./node_modules/gulp/bin/gulp.js compile",

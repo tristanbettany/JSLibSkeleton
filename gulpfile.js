@@ -15,10 +15,12 @@ compileJs = () => {
         .pipe(gulp.dest('./dist'))
 }
 
-gulp.task('compile', () => {
+gulp.task('compile', (done) => {
     compileJs()
+    done()
 });
 
-gulp.task('default', () => {
+gulp.task('default', (done) => {
     gulp.watch('./src/**/*.js', ['compile']);
+    done()
 });
